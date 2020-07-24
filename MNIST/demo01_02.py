@@ -1,3 +1,14 @@
+'''
+@Description: 
+@Version: 1.0
+@Autor: Zhaoc Sun
+@Date: 2020-07-24 08:50:37
+@LastEditors: Zhaoc Sun
+@LastEditTime: 2020-07-24 12:48:51
+@FilePath: \pytorch2020\demo01_02.py
+'''
+
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -5,7 +16,7 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 
 
-BATCH_SIZE = 512
+BATCH_SIZE = 36
 EPOCHS = 20
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -58,6 +69,15 @@ optimizer = optim.Adam(model.parameters())
 
 
 def train(model, device, train_loader, optimizer, epoch):
+    """
+
+    :param model:
+    :param device:
+    :param train_loader:
+    :param optimizer:
+    :param epoch:
+    :return:
+    """
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device)

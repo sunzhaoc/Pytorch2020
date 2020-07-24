@@ -1,0 +1,21 @@
+{
+    "python.pythonPath": "X:\\Anaconda3\\envs\\pytorch\\python.exe",
+    "fileheader.customMade": {
+
+        //此为头部注释
+        "Description": "",
+        "Version": "1.0",
+        "Autor": "Zhaoc Sun",
+        "Date": "Do not edit",
+        "LastEditors": "Zhaoc Sun",
+        "LastEditTime": "Do not edit"
+        "FilePath": "Do not edit"
+    },
+
+
+    // 新建文件自动添加头部注释
+    "fileheader.configObj": {
+        "createHeader": true, // 新建文件自动添加头部注释
+        "autoAdd": true, // 自动添加文件头部注释
+    }
+}

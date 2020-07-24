@@ -70,6 +70,13 @@ def train(model, device, train_loader, optimizer, epoch):
 
 
 def test(model, device, test_loader):
+    """
+
+    :param model:
+    :param device:
+    :param test_loader:
+    :return:
+    """
     model.eval()
     test_loss = 0
     correct = 0
