@@ -6,7 +6,7 @@ scipy==1.4.1
 numba==0.47.0
 smplx==0.1.13
 gdown==3.6.4
-PyYAML==5.3.1
+PyYAML==5.4
 joblib==0.14.1
 pillow==6.2.1
 trimesh==3.5.25
